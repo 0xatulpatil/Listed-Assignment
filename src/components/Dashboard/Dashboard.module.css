@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer{
+    width: 100%;
+    background-color: #f5f5f5;
+    font-family: "Montserrat";
+    /* background-color: aquamarine; */
+    padding: 50px 50px 0px 60px;
+}
+
+.datachip{
+    display: flex;
+    justify-content: space-between;
+}
+.chipname{
+    font-weight: 700;
+    font-size: 24px;
+}
+.chipOptions{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+}
+.searchBar{
+    background-color: white;
+    
+}
+input{
+    border-radius: 10px;
+    height: 30px;
+    max-width: 180px;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.search{
+    display: none;
+}
+.icon{
+    height: 50px;
+}
+.menu{
+    display: none;
+}
+.bell{
+    padding-top:5px;
+}
+.searchIcon{
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+.avatar{
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 850px) {
+    
+    .maincontainer{
+        padding-left: 20px;
+    }
+    .chipOptions{
+        max-width: 150px;
+        margin-left: 20px;
+    }
+    .searhBar{
+        display: none;
+    }
+    .search{
+        display: block;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .maincontainer{
+        padding-left: 10px;
+    }
+    .menu{
+        display: flex;
+        height: 30px;
+        width: 30px;
+    }
+    .icon{
+        display: none;
+    }
+    .chipOptions{
+        /* max-width: 150px; */
+        margin-left: auto;
+    }
+
+}
