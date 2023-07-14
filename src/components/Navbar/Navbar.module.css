@@ -8,6 +8,7 @@
 
 .rightContainer{
     display: flex;
+    /* height: 100vh; */
     /* position: relative; */
 }
 
@@ -145,7 +146,7 @@
     display: none;
  }
  .rightContainer{
-    
+    /* height: 100vh; */
  }
 
 }

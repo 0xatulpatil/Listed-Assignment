@@ -43,6 +43,10 @@ export const Dashboard = () => {
 		},
 	];
 
+	alert(
+		"Please note while resizing window: The charts depends on the initial viewport height and width, so after resizing please refresh once."
+	);
+
 	return (
 		<div className={styles.maincontainer}>
 			<div className={styles.datachip}>
