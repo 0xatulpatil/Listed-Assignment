@@ -10,6 +10,7 @@
     font-family: "Montserrat";
     /* background-color: aquamarine; */
     padding: 50px 50px 0px 60px;
+    height: 100%;
 }
 
 .datachip{
@@ -30,7 +31,7 @@
     background-color: white;
     
 }
-input{
+.input{
     border-radius: 10px;
     height: 30px;
     max-width: 180px;
@@ -65,14 +66,46 @@ input:focus, textarea:focus, select:focus{
     border-radius: 50px;
 }
 
+.chipData{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.otherCharts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 100%; */
+    background-color: #f5f5f5;
+}
 
+.piechart{
+    /* flex-grow: 1; */
+    min-width: 420px;
+    width: 100%;
+    /* width: 100%; */
+}
+.schedule{
+    /* min-width: 420px; */
+    /* width: 100%; */
+    /* flex-grow: 1; */
+    width: 100%;
+    height: inherit;
+}
 
-
-
+@media (max-width: 850px) {
+    .otherCharts{
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 850px) {
     
     .maincontainer{
+        padding-left: 20px;
         padding-left: 20px;
     }
     .chipOptions{
@@ -90,19 +123,25 @@ input:focus, textarea:focus, select:focus{
 
 @media (max-width: 450px) {
     .maincontainer{
-        padding-left: 10px;
+        padding: 30px 20px 20px 20px;
     }
     .menu{
         display: flex;
         height: 30px;
         width: 30px;
     }
+    .datachip{
+        justify-content: space-between;
+    }
     .icon{
         display: none;
     }
+    .chipname{
+        margin: 0px;
+    }
     .chipOptions{
-        /* max-width: 150px; */
-        margin-left: auto;
+        max-width: 10px;
+        margin-right : 20px;
     }
 
 }

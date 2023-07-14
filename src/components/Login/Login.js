@@ -10,6 +10,7 @@ import {
 import { SpinnerCircular } from "spinners-react";
 
 import { useNavigate } from "react-router-dom";
+import { setLogLevel } from "firebase/app";
 
 export const Login = () => {
 	const [email, setEmail] = useState("");
@@ -48,11 +49,13 @@ export const Login = () => {
 	};
 
 	const getAuthResults = async (auth) => {
+		isLoading(1);
 		const res = await getRedirectResult(auth);
 		if (res !== null) {
 			console.log(res.user);
 			navigate("/user/dashboard");
 		} else console.log("User not found");
+		isLoading(0);
 	};
 
 	useEffect(() => {

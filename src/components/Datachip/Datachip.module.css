@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.chip{
+    color: #000;
+    max-width: max(23%, 150px);
+    width: 100%;
+    height: 120px;
+    /* background-color: #DDEFE0; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px 20px 25px;
+    margin-bottom: 10px;
+    word-wrap: normal;
+}
+.data{
+    margin-top: auto;
+
+}
+.icon{
+    height: 26px;
+    width: 26px;
+}
+.chipText{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lato';
+}
+.chipNumber{
+    font-size: 24px;
+    font-weight: 700;
+    font-family:'Montserrat';
+}
+
+
+@media (max-width: 900px) {
+    .chip{
+        max-width: 100%;
+    }
+}

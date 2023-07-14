@@ -12,7 +12,7 @@ import scdIcon from "../../assets/schedules.svg";
 export const Navbar = () => {
 	return (
 		<div className={styles.rightContainer}>
-			<div className={styles.container}>
+			<div className={`${styles.container} ${styles.fixed}`}>
 				<div className={styles.navbar}>
 					<div className={styles.options}>
 						<div className={styles.logo}>Board.</div>
@@ -60,6 +60,20 @@ export const Navbar = () => {
 									</div>
 								</Link>
 							</div>
+							<div className={styles.subLinks}>
+								<div className={styles.sl}>Help</div>
+								<div className={styles.sl}>Contact Us</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className={`${styles.container} ${styles.dummy}`}>
+				<div className={styles.navbar}>
+					<div className={styles.options}>
+						<div className={styles.logo}>Board.</div>
+						<div className={`${styles.logo} ${styles.logoS}`}>B.</div>
+						<div className={styles.links}>
 							<div className={styles.subLinks}>
 								<div className={styles.sl}>Help</div>
 								<div className={styles.sl}>Contact Us</div>
