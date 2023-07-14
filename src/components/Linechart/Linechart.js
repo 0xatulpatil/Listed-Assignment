@@ -25,16 +25,13 @@ ChartJS.register(
 );
 
 export const options = {
-	responsive: true,
+	// responsive: true,
 	plugins: {
 		legend: {
 			position: "top",
 		},
-		title: {
-			display: true,
-			text: "Chart.js Line Chart",
-		},
 	},
+	maintainAspectRatio: false,
 };
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
@@ -43,13 +40,13 @@ export const data = {
 	labels,
 	datasets: [
 		{
-			label: "Dataset 1",
+			label: "Guest",
 			data: labels.map(() => faker.number.int()),
 			borderColor: "rgb(255, 99, 132)",
 			backgroundColor: "rgba(255, 99, 132, 0.5)",
 		},
 		{
-			label: "Dataset 2",
+			label: "User",
 			data: labels.map(() => faker.number.int()),
 			borderColor: "rgb(53, 162, 235)",
 			backgroundColor: "rgba(53, 162, 235, 0.5)",
@@ -61,8 +58,10 @@ export const Linechart = () => {
 	return (
 		<div className={styles.mainCont}>
 			<div className={styles.cardHeading}>Activities</div>
-			<div className={styles.cardData}></div>
-			<Line options={options} data={data} />
+			<div className={styles.cardData}>May - June 2021</div>
+			<div className={styles.lineline}>
+				<Line options={options} data={data} />
+			</div>
 		</div>
 	);
 };
