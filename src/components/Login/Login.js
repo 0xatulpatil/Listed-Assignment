@@ -183,7 +183,7 @@ export const Login = () => {
 								<input
 									className={styles.input}
 									type="password"
-									placeholder="gavin.belson@hooli.com"
+									placeholder="i-love-pied-piper"
 									value={password}
 									onChange={(e) => setPassword(e.target.value)}
 								/>
